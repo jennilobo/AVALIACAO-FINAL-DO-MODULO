@@ -1,0 +1,163 @@
+:root {
+  --cor-primaria: #095513;
+  --cor-secundaria: grey;
+  --cor-footer: #1f2821;
+  --cor-toggle: #121212;
+  --cor-quarta: white;
+  --cor-terciaria: #f5f5f5ec;
+  --cor-list: #3994cc9b;
+}
+
+body {
+  background-color: var(--cor-terciaria);
+}
+
+
+/* ----modal---- */
+.modal-img {
+  margin-bottom: 20px;
+  width: 200px;
+  border-radius: 10px;
+  border: solid 5px rgb(7, 241, 7);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* ----modal---- */
+
+/* ----personagens---- */
+.personagem {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--cor-terciaria);
+  width: 100%;
+  height: 15em;
+  gap: 1em;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  box-shadow: 10px 10px 5px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.personagem h2 {
+  font-size: 1em;
+}
+
+.personagem:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  border-color: #00ff00;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+.personagem-dados {
+  width: 50%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.personagem-dados h2 {
+  font-size: 1.9em;
+  font-weight: 800;
+  color: var(--cor-primaria);
+}
+
+.personagem-dados p span {
+  color: var(--cor-secundaria);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.7em;
+  height: 0.9em;
+}
+
+.exibirStatus {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: var(--cor-secundaria);
+}
+
+/* ----personagens---- */
+
+/* ----header---- */
+#campoBusca:hover {
+  height: 40px;
+  transition: height 0.4s ease-in-out;
+}
+
+#btnBuscar:hover {
+  background-color: #007700 !important;
+  color: white !important;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important;
+}
+
+/* ----header---- */
+
+
+/* ----paginação---- */
+
+#pag {
+  margin: 1em 0;
+  gap: 1%;
+}
+
+.btn-page {
+  color: var(--cor-primaria);
+  padding: 0.5em 1em;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#pagina-atual {
+  margin-top: 5em;
+}
+
+/* ----paginação---- */
+
+
+/* Estilos para o tema dark */
+.dark-theme {
+  background-color: #262626;
+  color: var(--cor-quarta);
+  --cor-primaria: #00FF00;
+  --cor-terciaria: #292929;
+  --cor-secundaria: lemonchiffon;
+  --cor-toggle: #eeeeee;
+}
+
+h1 b {
+  color: #00FF00;
+}
+
+.me-2 {
+  margin-right: 0;
+}
+
+#theme-toggle {
+  color: var(--cor-toggle);
+  font-size: 2em;
+  margin-left: calc(100vw - 2.5em);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+#theme-toggle:hover {
+  font-size: 2.1em;
+  color: inherit;
+}
+
+#theme-toggle.rotate {
+  transform: rotate(180deg);
+}
